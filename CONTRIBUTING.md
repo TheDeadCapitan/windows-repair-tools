@@ -1,130 +1,106 @@
 # Contributing to Windows Repair Tools
 
-First off, thank you for considering contributing to Windows Repair Tools! It's people like you that make this tool collection better for everyone.
-
-## Code of Conduct
-
-By participating in this project, you are expected to uphold our principles:
-- Be respectful and inclusive
-- Welcome newcomers and help them get started
-- Focus on what is best for the community
-- Show empathy towards other community members
+First off, thank you for considering contributing to Windows Repair Tools! 
 
 ## How Can I Contribute?
 
 ### Reporting Bugs
 
-Before creating bug reports, please check existing issues to avoid duplicates. When you create a bug report, include:
+Before creating bug reports, please check existing issues to avoid duplicates.
 
-- **Clear title and description**
-- **Steps to reproduce**
-- **Expected behavior**
-- **Actual behavior**
-- **Windows version**
-- **Error messages (if any)**
-- **Screenshots (if applicable)**
+**How to submit a good bug report:**
+
+1. Use a clear and descriptive title
+2. Include your Windows version (Win+Pause to check)
+3. Describe the exact steps to reproduce the problem
+4. Include any error messages
+5. Explain what you expected to happen
 
 ### Suggesting Enhancements
 
-Enhancement suggestions are welcome! Please provide:
+Enhancement suggestions are welcome! Please:
 
-- **Clear title and description**
-- **Use case scenario**
-- **Proposed implementation approach**
-- **Any mockups or examples**
+1. Use a clear and descriptive title
+2. Provide a detailed description of the proposed feature
+3. Explain why this enhancement would be useful
+4. Include mockups or examples if applicable
 
-### Adding New Tools
+### Pull Requests
 
-To add a new repair tool:
+1. Fork the repo and create your branch from `main`
+2. Make your changes
+3. Test on multiple Windows versions if possible
+4. Update documentation if needed
+5. Submit the pull request
 
-1. **Follow the existing format**:
-   - Include ASCII art header
-   - Implement admin check
-   - Create menu system
-   - Add progress indicators
-   - Include proper error handling
+## Development Guidelines
 
-2. **Tool requirements**:
-   - Must use only built-in Windows utilities
-   - Should work on Windows 7 and above
-   - Include clear user instructions
-   - Add confirmation for destructive operations
+### Batch Script Standards
 
-3. **Documentation**:
-   - Update README.md with tool description
-   - Add usage examples
-   - Document any specific requirements
+1. **Use clear variable names**
+   ```batch
+   REM Good
+   set network_status=connected
+   
+   REM Bad
+   set ns=c
+   ```
 
-### Pull Request Process
+2. **Add comments for complex operations**
+   ```batch
+   REM Reset network adapter to clear corrupted settings
+   netsh winsock reset
+   ```
 
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/YourFeatureName`
-3. **Make your changes**
-4. **Test thoroughly** on different Windows versions
-5. **Commit with clear messages**: `git commit -m "Add: Network adapter reset feature"`
-6. **Push to your fork**: `git push origin feature/YourFeatureName`
-7. **Create Pull Request** with detailed description
+3. **Include error handling**
+   ```batch
+   ipconfig /renew
+   if %errorlevel% neq 0 (
+       echo [!] Failed to renew IP address
+   )
+   ```
 
-## Coding Standards
-
-### Batch Script Guidelines
-
-```batch
-:: Use clear comments
-:: Explain complex operations
-
-:: Use consistent indentation
-if %choice%==1 (
-    echo Processing...
-    :: Your code here
-)
-
-:: Handle errors gracefully
-if %errorlevel% neq 0 (
-    echo Error occurred!
-    goto :ERROR_HANDLER
-)
-
-:: Use meaningful variable names
-set networkAdapterName=Ethernet
-```
+4. **Use consistent formatting**
+   - Indent with 4 spaces
+   - Use UPPERCASE for labels
+   - Keep lines under 80 characters when possible
 
 ### ASCII Art Guidelines
 
-- Keep ASCII art simple and readable
-- Ensure it displays correctly in standard CMD window (80 columns)
-- Test on different console configurations
+Keep ASCII art simple and readable:
+```
+REM Good - Clear and simple
+echo    [o_o]
+echo     -!-
+echo     / \
+
+REM Avoid - Too complex
+echo   ╔═══════════╗
+echo   ║ ┌─┐ ┌─┐  ║
+echo   ║ │ │ │ │  ║
+```
 
 ### Testing
 
 Before submitting:
 
-1. Test on clean Windows installations
-2. Test with and without admin rights
-3. Verify all menu options work
-4. Check for typos and grammar
-5. Ensure proper error handling
+1. Test on Windows 10/11 (minimum)
+2. Run as both admin and non-admin
+3. Test all menu options
+4. Verify error messages display correctly
+5. Check that the tool exits cleanly
 
-## Project Structure
+## Code of Conduct
 
-```
-windows-repair-tools/
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── tools/
-│   ├── network-repair-tool.bat
-│   ├── system-file-repair-tool.bat
-│   └── [other-tools].bat
-├── docs/
-│   ├── usage-guide.md
-│   └── troubleshooting.md
-└── assets/
-    └── screenshots/
-```
+- Be respectful and inclusive
+- Welcome newcomers and help them
+- Focus on constructive criticism
+- No harassment or offensive language
 
 ## Questions?
 
-Feel free to open an issue with the "question" label if you need clarification on anything.
+Feel free to open an issue with the "question" label!
 
-Thank you for contributing! 🎉
+---
+
+Thank you for helping make Windows Repair Tools better! 🎉
