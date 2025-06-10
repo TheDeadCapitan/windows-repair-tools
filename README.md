@@ -6,14 +6,12 @@
 ![Batch](https://img.shields.io/badge/Batch-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Maintenance](https://img.shields.io/badge/Maintenance-FF6B6B?style=for-the-badge&logo=tools&logoColor=white)
 
-<img src="https://raw.githubusercontent.com/yourusername/windows-repair-tools/main/assets/banner.png" alt="Windows Repair Tools Banner" width="600">
-
 **A comprehensive collection of Windows repair and maintenance tools**
 
-[![License](https://img.shields.io/github/license/yourusername/windows-repair-tools)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/yourusername/windows-repair-tools)](https://github.com/yourusername/windows-repair-tools/stargazers)
-[![Issues](https://img.shields.io/github/issues/yourusername/windows-repair-tools)](https://github.com/yourusername/windows-repair-tools/issues)
-[![Downloads](https://img.shields.io/github/downloads/yourusername/windows-repair-tools/total)](https://github.com/yourusername/windows-repair-tools/releases)
+[![License](https://img.shields.io/github/license/TheDeadCapitan/windows-repair-tools)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/TheDeadCapitan/windows-repair-tools)](https://github.com/TheDeadCapitan/windows-repair-tools/stargazers)
+[![Issues](https://img.shields.io/github/issues/TheDeadCapitan/windows-repair-tools)](https://github.com/TheDeadCapitan/windows-repair-tools/issues)
+[![Downloads](https://img.shields.io/github/downloads/TheDeadCapitan/windows-repair-tools/total)](https://github.com/TheDeadCapitan/windows-repair-tools/releases)
 
 </div>
 
@@ -69,13 +67,13 @@ System integrity checker and repair utility.
 ## 📥 Installation
 
 ### Method 1: Direct Download
-1. Click on the tool you want from the [`/tools`](tools/) directory
+1. Click on the tool you want from the [`/tools`](https://github.com/TheDeadCapitan/windows-repair-tools/tree/main/tools) directory
 2. Click "Raw" button
 3. Right-click and "Save as" with `.bat` extension
 
 ### Method 2: Git Clone
 ```bash
-git clone https://github.com/yourusername/windows-repair-tools.git
+git clone https://github.com/TheDeadCapitan/windows-repair-tools.git
 cd windows-repair-tools
 ```
 
@@ -162,9 +160,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/windows-repair-tools)
-![GitHub code size](https://img.shields.io/github/languages/code-size/yourusername/windows-repair-tools)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/windows-repair-tools)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheDeadCapitan/windows-repair-tools)
+![GitHub code size](https://img.shields.io/github/languages/code-size/TheDeadCapitan/windows-repair-tools)
+![GitHub last commit](https://img.shields.io/github/last-commit/TheDeadCapitan/windows-repair-tools)
 
 ---
 
