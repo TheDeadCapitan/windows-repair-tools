@@ -1,0 +1,59 @@
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+*.old
+
+# Build outputs
+/build/
+/dist/
+/output/
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+/test-results/
+/coverage/
+
+# Documentation builds
+/docs/_build/
+/docs/_site/
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Personal notes
+/notes/
+/todo.txt
+/private/
